@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1928717D2CAE170D00C30975 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1928717C2CAE170D00C30975 /* AuthManager.swift */; };
+		192871812CAE19E400C30975 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192871802CAE19E400C30975 /* LoginView.swift */; };
 		1981D7E12CAD19E7003C7676 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1981D7E02CAD19E7003C7676 /* FirebaseAuth */; };
 		1981D7E32CAD19E7003C7676 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1981D7E22CAD19E7003C7676 /* FirebaseFirestore */; };
 		1981D7E52CAD19E7003C7676 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1981D7E42CAD19E7003C7676 /* FirebaseFirestoreSwift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		0D136A617E7E5F9B4035C809 /* Pods-MyApp-Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-Map.release.xcconfig"; path = "Target Support Files/Pods-MyApp-Map/Pods-MyApp-Map.release.xcconfig"; sourceTree = "<group>"; };
+		1928717C2CAE170D00C30975 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		192871802CAE19E400C30975 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1981D7E82CAD1C67003C7676 /* GoogleService-Info(3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info(3).plist"; sourceTree = "<group>"; };
 		1981D7EA2CAD1ED2003C7676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		19887A452CAD0BBB00EE74CE /* MyApp-Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp-Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +114,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1928717A2CAE169D00C30975 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1928717C2CAE170D00C30975 /* AuthManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		1928717E2CAE19CF00C30975 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1928717F2CAE19D600C30975 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1928717F2CAE19D600C30975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				192871802CAE19E400C30975 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		19887A3C2CAD0BBB00EE74CE = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +163,8 @@
 		19887A472CAD0BBB00EE74CE /* MyApp-Map */ = {
 			isa = PBXGroup;
 			children = (
+				1928717E2CAE19CF00C30975 /* Login */,
+				1928717A2CAE169D00C30975 /* Manager */,
 				1981D7EA2CAD1ED2003C7676 /* Info.plist */,
 				19887A482CAD0BBB00EE74CE /* MyApp_MapApp.swift */,
 				19887A4A2CAD0BBB00EE74CE /* ContentView.swift */,
@@ -429,6 +459,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				19887A4B2CAD0BBB00EE74CE /* ContentView.swift in Sources */,
+				1928717D2CAE170D00C30975 /* AuthManager.swift in Sources */,
+				192871812CAE19E400C30975 /* LoginView.swift in Sources */,
 				19887A492CAD0BBB00EE74CE /* MyApp_MapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

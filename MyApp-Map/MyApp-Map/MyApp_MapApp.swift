@@ -24,10 +24,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct MyApp_MapApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
+    @StateObject private var authManager = AuthManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(authManager)
+                .onOpenURL { url in
+                    GIDSignIn.sharedInstance.handle(url)
+                }
         }
     }
 }
