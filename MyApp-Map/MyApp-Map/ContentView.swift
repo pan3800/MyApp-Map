@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authManager: AuthManager
+    
     var body: some View {
         VStack {
-            LoginView()
+            if authManager.signState == .signIn {
+                MainView()
+            } else {
+                LoginView()
+            }
         }
         .padding()
     }
