@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct ProfileView: View {
     @EnvironmentObject var authManager: AuthManager
     var body: some View {
         VStack {
@@ -24,8 +24,8 @@ struct MainView: View {
     }
 }
 
-struct MainView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        ProfileView()
     }
 }

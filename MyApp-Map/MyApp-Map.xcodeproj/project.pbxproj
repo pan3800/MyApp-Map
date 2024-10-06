@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1928717D2CAE170D00C30975 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1928717C2CAE170D00C30975 /* AuthManager.swift */; };
 		192871812CAE19E400C30975 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192871802CAE19E400C30975 /* LoginView.swift */; };
+		195B539C2CB2BD7000C82D17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 195B539B2CB2BD7000C82D17 /* GoogleService-Info.plist */; };
 		1981D7E12CAD19E7003C7676 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1981D7E02CAD19E7003C7676 /* FirebaseAuth */; };
 		1981D7E32CAD19E7003C7676 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1981D7E22CAD19E7003C7676 /* FirebaseFirestore */; };
 		1981D7E52CAD19E7003C7676 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1981D7E42CAD19E7003C7676 /* FirebaseFirestoreSwift */; };
@@ -20,8 +21,7 @@
 		19887A5A2CAD0BBC00EE74CE /* MyApp_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19887A592CAD0BBC00EE74CE /* MyApp_MapTests.swift */; };
 		19887A642CAD0BBC00EE74CE /* MyApp_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19887A632CAD0BBC00EE74CE /* MyApp_MapUITests.swift */; };
 		19887A662CAD0BBC00EE74CE /* MyApp_MapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19887A652CAD0BBC00EE74CE /* MyApp_MapUITestsLaunchTests.swift */; };
-		19B739262CAFEC1000AFA35E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19B739252CAFEC1000AFA35E /* GoogleService-Info.plist */; };
-		19B739282CAFEEB600AFA35E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B739272CAFEEB600AFA35E /* MainView.swift */; };
+		19B739282CAFEEB600AFA35E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B739272CAFEEB600AFA35E /* ProfileView.swift */; };
 		743D9CD9042EA13938F035E3 /* Pods_MyApp_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9209AACB6A1DBE47E29E028 /* Pods_MyApp_Map.framework */; };
 		957472755C50926E9C5F3744 /* Pods_MyApp_Map_MyApp_MapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3846FFF15EF13CC6B01163 /* Pods_MyApp_Map_MyApp_MapUITests.framework */; };
 		FA004B3B315B614DC6A8EF01 /* Pods_MyApp_MapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6892F761D2A40FA0D3806AE /* Pods_MyApp_MapTests.framework */; };
@@ -48,6 +48,7 @@
 		0D136A617E7E5F9B4035C809 /* Pods-MyApp-Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-Map.release.xcconfig"; path = "Target Support Files/Pods-MyApp-Map/Pods-MyApp-Map.release.xcconfig"; sourceTree = "<group>"; };
 		1928717C2CAE170D00C30975 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		192871802CAE19E400C30975 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		195B539B2CB2BD7000C82D17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1981D7EA2CAD1ED2003C7676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		19887A452CAD0BBB00EE74CE /* MyApp-Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp-Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19887A482CAD0BBB00EE74CE /* MyApp_MapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp_MapApp.swift; sourceTree = "<group>"; };
@@ -59,8 +60,7 @@
 		19887A5F2CAD0BBC00EE74CE /* MyApp-MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyApp-MapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19887A632CAD0BBC00EE74CE /* MyApp_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp_MapUITests.swift; sourceTree = "<group>"; };
 		19887A652CAD0BBC00EE74CE /* MyApp_MapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp_MapUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		19B739252CAFEC1000AFA35E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		19B739272CAFEEB600AFA35E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		19B739272CAFEEB600AFA35E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5EBB670321150DDDC4A5D1E1 /* Pods-MyApp-MapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MapTests.debug.xcconfig"; path = "Target Support Files/Pods-MyApp-MapTests/Pods-MyApp-MapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3DB388E0A8177B06B44A71 /* Pods-MyApp-Map-MyApp-MapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-Map-MyApp-MapUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyApp-Map-MyApp-MapUITests/Pods-MyApp-Map-MyApp-MapUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3846FFF15EF13CC6B01163 /* Pods_MyApp_Map_MyApp_MapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp_Map_MyApp_MapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,10 +169,10 @@
 				1928717A2CAE169D00C30975 /* Manager */,
 				1981D7EA2CAD1ED2003C7676 /* Info.plist */,
 				19887A482CAD0BBB00EE74CE /* MyApp_MapApp.swift */,
-				19B739272CAFEEB600AFA35E /* MainView.swift */,
+				19B739272CAFEEB600AFA35E /* ProfileView.swift */,
 				19887A4A2CAD0BBB00EE74CE /* ContentView.swift */,
 				19887A4C2CAD0BBC00EE74CE /* Assets.xcassets */,
-				19B739252CAFEC1000AFA35E /* GoogleService-Info.plist */,
+				195B539B2CB2BD7000C82D17 /* GoogleService-Info.plist */,
 				19887A4E2CAD0BBC00EE74CE /* Preview Content */,
 			);
 			path = "MyApp-Map";
@@ -333,7 +333,7 @@
 			files = (
 				19887A502CAD0BBC00EE74CE /* Preview Assets.xcassets in Resources */,
 				19887A4D2CAD0BBC00EE74CE /* Assets.xcassets in Resources */,
-				19B739262CAFEC1000AFA35E /* GoogleService-Info.plist in Resources */,
+				195B539C2CB2BD7000C82D17 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +464,7 @@
 				19887A4B2CAD0BBB00EE74CE /* ContentView.swift in Sources */,
 				1928717D2CAE170D00C30975 /* AuthManager.swift in Sources */,
 				192871812CAE19E400C30975 /* LoginView.swift in Sources */,
-				19B739282CAFEEB600AFA35E /* MainView.swift in Sources */,
+				19B739282CAFEEB600AFA35E /* ProfileView.swift in Sources */,
 				19887A492CAD0BBB00EE74CE /* MyApp_MapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
