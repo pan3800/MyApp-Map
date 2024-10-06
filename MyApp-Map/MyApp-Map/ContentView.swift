@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if authManager.signState == .signIn {
-                ProfileView()
+                MainTabView()
             } else {
                 LoginView()
             }
