@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainTabView: View {
     @State var tabIndex = 2
-    
+    @StateObject private var viewModel = ProfileViewModel()
+
     var body: some View {
         TabView(selection: $tabIndex) {
             Text("Feed")
@@ -23,6 +24,7 @@ struct MainTabView: View {
                 }
                 .tag(1)
             ProfileView()
+                .environmentObject(viewModel)
                 .tabItem {
                     Image(systemName: "person.circle")
                 }
@@ -31,8 +33,8 @@ struct MainTabView: View {
     }
 }
 
-struct MainTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabView()
-    }
-}
+//struct MainTabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MainTabView()
+//    }
+//}

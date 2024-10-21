@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		191F6AEC2CB3D73000962828 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F6AEB2CB3D73000962828 /* AccountView.swift */; };
+		191F6AEF2CB3DEE900962828 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F6AEE2CB3DEE900962828 /* User.swift */; };
+		191F6AF22CB3E10900962828 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F6AF12CB3E10900962828 /* ProfileViewModel.swift */; };
 		1928717D2CAE170D00C30975 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1928717C2CAE170D00C30975 /* AuthManager.swift */; };
 		192871812CAE19E400C30975 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192871802CAE19E400C30975 /* LoginView.swift */; };
 		195B539C2CB2BD7000C82D17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 195B539B2CB2BD7000C82D17 /* GoogleService-Info.plist */; };
@@ -47,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		0D136A617E7E5F9B4035C809 /* Pods-MyApp-Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-Map.release.xcconfig"; path = "Target Support Files/Pods-MyApp-Map/Pods-MyApp-Map.release.xcconfig"; sourceTree = "<group>"; };
+		191F6AEB2CB3D73000962828 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		191F6AEE2CB3DEE900962828 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		191F6AF12CB3E10900962828 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		1928717C2CAE170D00C30975 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		192871802CAE19E400C30975 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		195B539B2CB2BD7000C82D17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -118,6 +124,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		191F6AEA2CB3D72100962828 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				191F6AEB2CB3D73000962828 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		191F6AED2CB3DED900962828 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				191F6AEE2CB3DEE900962828 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		191F6AF02CB3E0E100962828 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				191F6AF12CB3E10900962828 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1928717A2CAE169D00C30975 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +168,23 @@
 			isa = PBXGroup;
 			children = (
 				192871802CAE19E400C30975 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		195B53A02CB2C5C800C82D17 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				191F6AF02CB3E0E100962828 /* ViewModel */,
+				195B53A12CB2C5D100C82D17 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		195B53A12CB2C5D100C82D17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19B739272CAFEEB600AFA35E /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,11 +214,13 @@
 		19887A472CAD0BBB00EE74CE /* MyApp-Map */ = {
 			isa = PBXGroup;
 			children = (
+				191F6AED2CB3DED900962828 /* Model */,
+				191F6AEA2CB3D72100962828 /* Account */,
+				195B53A02CB2C5C800C82D17 /* Profile */,
 				1928717E2CAE19CF00C30975 /* Login */,
 				1928717A2CAE169D00C30975 /* Manager */,
 				1981D7EA2CAD1ED2003C7676 /* Info.plist */,
 				19887A482CAD0BBB00EE74CE /* MyApp_MapApp.swift */,
-				19B739272CAFEEB600AFA35E /* ProfileView.swift */,
 				19887A4A2CAD0BBB00EE74CE /* ContentView.swift */,
 				195B539D2CB2BECB00C82D17 /* MainTabView.swift */,
 				19887A4C2CAD0BBC00EE74CE /* Assets.xcassets */,
@@ -467,8 +516,11 @@
 				1928717D2CAE170D00C30975 /* AuthManager.swift in Sources */,
 				192871812CAE19E400C30975 /* LoginView.swift in Sources */,
 				195B539F2CB2BF7200C82D17 /* ContentView.swift in Sources */,
+				191F6AF22CB3E10900962828 /* ProfileViewModel.swift in Sources */,
 				19B739282CAFEEB600AFA35E /* ProfileView.swift in Sources */,
+				191F6AEF2CB3DEE900962828 /* User.swift in Sources */,
 				19887A492CAD0BBB00EE74CE /* MyApp_MapApp.swift in Sources */,
+				191F6AEC2CB3D73000962828 /* AccountView.swift in Sources */,
 				195B539E2CB2BECB00C82D17 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

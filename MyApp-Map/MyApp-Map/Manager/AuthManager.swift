@@ -11,8 +11,18 @@ import GoogleSignIn
 
 class AuthManager: ObservableObject {
     
-    @Published var signState: signState = .signOut
+    static let shared = AuthManager()
     
+    @Published var currentAuthUser: FirebaseAuth.User?
+    @Published var currentUser: User?
+    @Published var signState: signState = .signOut
+
+    
+    init() {
+        currentAuthUser = Auth.auth().currentUser
+        // currentUser = currentAuthUser
+    }
+
     enum signState {
         case signIn
         case signOut
@@ -60,6 +70,7 @@ class AuthManager: ObservableObject {
             } else {
                 self.signState = .signIn
                 print("로그인 성공")
+            
             }
         }
     }
