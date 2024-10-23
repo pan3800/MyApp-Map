@@ -14,18 +14,12 @@ class AuthManager: ObservableObject {
     static let shared = AuthManager()
     
     @Published var currentAuthUser: FirebaseAuth.User?
-    @Published var currentUser: User?
-    @Published var signState: signState = .signOut
 
     
     init() {
         checkPreviousSignIn()
     }
 
-    enum signState {
-        case signIn
-        case signOut
-    }
     
     func checkPreviousSignIn() {
         // 이전 로그인 상태가 있는지 확인
@@ -57,7 +51,6 @@ class AuthManager: ObservableObject {
                 guard let result = result else { return }
                 authenticateUser(for: result.user, with: error)
             }
-            
         }
     }
     
@@ -69,26 +62,22 @@ class AuthManager: ObservableObject {
         }
         
         guard let accessToken = user?.accessToken.tokenString, let idToken = user?.idToken?.tokenString else { return }
-        
         let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
         
-        Auth.auth().signIn(with: credential) { (_, error) in
-            if let error = error {
-                print(error.localizedDescription)
-            } else {
-                self.signState = .signIn
-                print("로그인 성공")
-            
+        Auth.auth().signIn(with: credential) { [unowned self] (authResult, error) in
+        if let error = error {
+            print(error.localizedDescription)
+        } else {
+            self.currentAuthUser = authResult?.user
+            print("로그인 성공")
             }
         }
     }
     
     func signOut() {
-        GIDSignIn.sharedInstance.signOut()
-        
         do {
             try Auth.auth().signOut()
-            self.signState = .signOut
+            currentAuthUser = nil
         } catch {
             print(error.localizedDescription)
         }
