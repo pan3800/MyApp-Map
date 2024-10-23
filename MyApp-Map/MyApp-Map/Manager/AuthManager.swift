@@ -17,7 +17,10 @@ class AuthManager: ObservableObject {
 
     
     init() {
-        checkPreviousSignIn()
+        currentAuthUser = Auth.auth().currentUser
+        if currentAuthUser != nil {
+            checkPreviousSignIn()
+        }
     }
 
     
