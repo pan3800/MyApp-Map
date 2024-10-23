@@ -19,13 +19,21 @@ class AuthManager: ObservableObject {
 
     
     init() {
-        currentAuthUser = Auth.auth().currentUser
-        // currentUser = currentAuthUser
+        checkPreviousSignIn()
     }
 
     enum signState {
         case signIn
         case signOut
+    }
+    
+    func checkPreviousSignIn() {
+        // 이전 로그인 상태가 있는지 확인
+        if GIDSignIn.sharedInstance.hasPreviousSignIn() {
+            GIDSignIn.sharedInstance.restorePreviousSignIn { [unowned self] user, error in
+                self.authenticateUser(for: user, with: error)
+            }
+        }
     }
     
     func googleSignIn () {

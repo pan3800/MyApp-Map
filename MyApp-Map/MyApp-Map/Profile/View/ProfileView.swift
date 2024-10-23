@@ -19,11 +19,11 @@ struct ProfileView: View {
             
             HStack {
                 if let imageUrl = viewModel.userProfileImage {
-                            KFImage(imageUrl)
-                                .resizable()
-                                .frame(width: 75, height: 75)
-                                .clipShape(Circle())
-                                .padding(.bottom, 10)
+                        KFImage(imageUrl)
+                            .resizable()
+                            .frame(width: 75, height: 75)
+                            .clipShape(Circle())
+                            .padding(.bottom, 10)
                                   
                 } else {
                     Image(systemName: "person.circle.fill")

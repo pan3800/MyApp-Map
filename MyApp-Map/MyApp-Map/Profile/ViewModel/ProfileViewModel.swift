@@ -20,6 +20,7 @@ class ProfileViewModel: ObservableObject {
     
     init() {
         fetchGoogleUserInfo()
+        
     }
     
     func fetchGoogleUserInfo() {
